@@ -48,6 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const totalCost = price * quantity;
 
         
-        resultDiv.textContent = "Стоимость заказа: " + totalCost + " руб.";
+        resultDiv.textContent = "Стоимость заказа: " + totalCost.toLocaleString('ru-RU') + " руб.";
     });
 });
