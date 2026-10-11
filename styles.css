@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.calculator-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    text-align: center;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444444;
+    font-size: 14px;
+}
+
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px; 
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+select:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+
+input.input-error {
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+
+input.input-error:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15);
+}
+
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 16px;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+
+.result-message {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+    min-height: 24px;
+}
+
+.btn-like {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+.btn-like:hover {
+    background-color: #0056b3;
+}
+
+
+@media (min-width: 480px) {
+    .calculator-card {
+        max-width: 400px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+}
